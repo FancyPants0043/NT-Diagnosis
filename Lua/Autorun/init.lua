@@ -1,8 +1,8 @@
 -- Set up
 
 NTDiagnosis = {}
-NTDiagnosis.Name = "Addon"
-NTDiagnosis.Version = "1.0.0h0"
+NTDiagnosis.Name = "NT Diagnosis"
+NTDiagnosis.Version = "1.0"
 NTDiagnosis.VersionNum = 000000001
 NTDiagnosis.MinNTVersion = "A1.12.1"
 NTDiagnosis.MinNTVersionNum = 01120100

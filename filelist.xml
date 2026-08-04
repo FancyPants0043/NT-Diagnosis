@@ -1,4 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentpackage name="NT Diagnosis" modversion="1.0" corepackage="False" steamworkshopid="" gameversion="1.13.4.0">
+  <!-- Localization -->
   <Text file="%ModDir%/Localization/English/English.xml" />
+  <!-- Scripts -->
+  <Other file="%ModDir%/Lua/Autorun/init.lua" />
+  <Other file="%ModDir%/Lua/Scripts/Server/addonfunctions.lua" />
+  <Other file="%ModDir%/Lua/Scripts/Server/humanupdate.lua" />
+  <Other file="%ModDir%/Lua/Scripts/Server/items.lua" />
+  <Other file="%ModDir%/Lua/Scripts/Server/ondamaged.lua" />
+  <Other file="%ModDir%/Lua/Scripts/Shared/configdata.lua" />
+  <!-- Items -->
+  <Item file="%ModDir%/Items/NTDiagnosis.xml" />
 </contentpackage>
