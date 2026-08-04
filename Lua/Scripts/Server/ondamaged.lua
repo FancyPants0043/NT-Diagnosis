@@ -52,20 +52,20 @@ Hook.Add("character.applyDamage", "NTAddon.ondamaged", function(characterHealth,
 	end
 end)
 
-NTAddon.OnDamagedMethods.gunshotwound= function(character, strength, limbtype)
+NTDiagnosis.OnDamagedMethods.gunshotwound= function(character, strength, limbtype)
 end
 
-NTAddon.OnDamagedMethods.explosiondamage = function(character, strength, limbtype)
+NTDiagnosis.OnDamagedMethods.explosiondamage = function(character, strength, limbtype)
 end
 
-NTAddon.OnDamagedMethods.bitewounds = function(character, strength, limbtype)
+NTDiagnosis.OnDamagedMethods.bitewounds = function(character, strength, limbtype)
 end
 
-NTAddon.OnDamagedMethods.lacerations = function(character, strength, limbtype)
+NTDiagnosis.OnDamagedMethods.lacerations = function(character, strength, limbtype)
 end
 
-NTAddon.OnDamagedMethods.blunttrauma = function(character, strength, limbtype)
+NTDiagnosis.OnDamagedMethods.blunttrauma = function(character, strength, limbtype)
 end
 
-NTAddon.OnDamagedMethods.internaldamage = function(character, strength, limbtype)
+NTDiagnosis.OnDamagedMethods.internaldamage = function(character, strength, limbtype)
 end

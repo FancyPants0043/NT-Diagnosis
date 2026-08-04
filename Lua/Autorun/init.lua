@@ -1,22 +1,22 @@
 -- Set up
 
-NTAddon = {}
-NTAddon.Name = "Addon"
-NTAddon.Version = "1.0.0h0"
-NTAddon.VersionNum = 000000001
-NTAddon.MinNTVersion = "A1.12.1"
-NTAddon.MinNTVersionNum = 01120100
-NTAddon.Path = table.pack(...)[1]
+NTDiagnosis = {}
+NTDiagnosis.Name = "Addon"
+NTDiagnosis.Version = "1.0.0h0"
+NTDiagnosis.VersionNum = 000000001
+NTDiagnosis.MinNTVersion = "A1.12.1"
+NTDiagnosis.MinNTVersionNum = 01120100
+NTDiagnosis.Path = table.pack(...)[1]
 
 -- Not Required but nice to visualize.
-NTAddon.UpdateAfflictions = {}
-NTAddon.UpdateLimbAfflictions = {}
-NTAddon.UpdateBloodAfflictions = {}
-NTAddon.OnDamagedMethods = {}
+NTDiagnosis.UpdateAfflictions = {}
+NTDiagnosis.UpdateLimbAfflictions = {}
+NTDiagnosis.UpdateBloodAfflictions = {}
+NTDiagnosis.OnDamagedMethods = {}
 
 Timer.Wait(function ()
     if NTC ~= nil then
-        NTC.RegisterExpansion(NTAddon) -- Register your addon to NT
+        NTC.RegisterExpansion(NTDiagnosis) -- Register your addon to NT
     end
 end, 1)
 
@@ -30,14 +30,14 @@ Timer.Wait(function()
     --Server Side scripts
 	if SERVER or (CLIENT and not Game.IsMultiplayer) then
     	-- Put your dofiles here!
-		dofile(NTAddon.Path .. "/Lua/Scripts/Server/addonfunctions.lua") 	-- Your addons helper functions
-		dofile(NTAddon.Path .. "/Lua/Scripts/Server/humanupdate.lua") 	    -- Your addons helper functions
-		dofile(NTAddon.Path .. "/Lua/Scripts/Server/items.lua") 	        -- Your addons helper functions
-		dofile(NTAddon.Path .. "/Lua/Scripts/Server/ondamaged.lua") 	    -- Your addons helper functions
+		dofile(NTDiagnosis.Path .. "/Lua/Scripts/Server/addonfunctions.lua") 	-- Your addons helper functions
+		dofile(NTDiagnosis.Path .. "/Lua/Scripts/Server/humanupdate.lua") 	    -- Your addons helper functions
+		dofile(NTDiagnosis.Path .. "/Lua/Scripts/Server/items.lua") 	        -- Your addons helper functions
+		dofile(NTDiagnosis.Path .. "/Lua/Scripts/Server/ondamaged.lua") 	    -- Your addons helper functions
 	end
 
 end, 1)
 
 Timer.Wait(function()
-    dofile(NTAddon.Path .. "/Lua/Scripts/Shared/configdata.lua") 			--Config.
+    dofile(NTDiagnosis.Path .. "/Lua/Scripts/Shared/configdata.lua") 			--Config.
 end, 1)

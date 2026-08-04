@@ -1,6 +1,6 @@
 -- This file will store your new addon afflictions.
 
-NTAddon.UpdateLimbAfflictions = {
+NTDiagnosis.UpdateLimbAfflictions = {
 
 	-- example_limb_aff
 	example_limb_aff = {
@@ -10,7 +10,7 @@ NTAddon.UpdateLimbAfflictions = {
 
 }
 
-NTAddon.UpdateAfflictions = {
+NTDiagnosis.UpdateAfflictions = {
 
 	-- example_aff
 	example_aff = {
@@ -22,7 +22,7 @@ NTAddon.UpdateAfflictions = {
 
 
 -- Afflictions used for blood related stuff.
-NTAddon.UpdateBloodAfflictions = {
+NTDiagnosis.UpdateBloodAfflictions = {
 
 	-- example_blood_aff
 	example_blood_aff = {
@@ -33,16 +33,16 @@ NTAddon.UpdateBloodAfflictions = {
 }
 
 -- Add to Neuro Limb Afflictions.
-for k, v in pairs(NTAddon.UpdateLimbAfflictions) do
+for k, v in pairs(NTDiagnosis.UpdateLimbAfflictions) do
 	NT.LimbAfflictions[k] = v
 end
 
 -- Add to Neuro Afflictions.
-for k, v in pairs(NTAddon.UpdateAfflictions) do
+for k, v in pairs(NTDiagnosis.UpdateAfflictions) do
 	NT.Afflictions[k] = v
 end
 
 -- Add to neuro afflictions
-for k, v in pairs(NTAddon.UpdateBloodAfflictions) do 
+for k, v in pairs(NTDiagnosis.UpdateBloodAfflictions) do 
 	NT.Afflictions[k] = v
 end
