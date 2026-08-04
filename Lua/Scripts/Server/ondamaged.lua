@@ -35,7 +35,7 @@ Hook.Add("character.applyDamage", "NTAddon.ondamaged", function(characterHealth,
 	for value in afflictions do
 		-- execute fitting method, if available
 		identifier = value.Prefab.Identifier.Value
-		methodtorun = NTTHERM.OnDamagedMethods[identifier]
+		methodtorun = NTDiagnosis.OnDamagedMethods[identifier]
 		if methodtorun ~= nil then
 			-- make resistance from afflictions apply
 			local resistance = HF.GetResistance(characterHealth.Character, identifier, hitLimb.type)
