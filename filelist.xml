@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="NT Diagnosis" modversion="1.0" corepackage="False" steamworkshopid="" gameversion="1.13.4.0">
+<contentpackage name="NT Diagnosis" modversion="1.0" corepackage="False" steamworkshopid="3248890424" gameversion="1.13.4.0">
   <!-- Localization -->
   <Text file="%ModDir%/Localization/English/English.xml" />
   <!-- Scripts -->
