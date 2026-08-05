@@ -10,5 +10,5 @@
   <Other file="%ModDir%/Lua/Scripts/Server/ondamaged.lua" />
   <Other file="%ModDir%/Lua/Scripts/Shared/configdata.lua" />
   <!-- Items -->
-  <Item file="%ModDir%/Items/Items.xml" />
+  <Item file="%ModDir%/Items/medical_thermometer.xml" />
 </contentpackage>
