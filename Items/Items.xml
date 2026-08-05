@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Override>
-    <Item name="Medical Thermometer" identifier="medical_thermometer" category="Equipment" tags="smallitem,medical" description="" />
+<Items>
+    <Item name="Medical Thermometer" identifier="medical_thermometer" category="Equipment" Tags="smallitem,medical" description="" />
         <Sprite texture="%ModDir%/Images/medical_thermometer.png" depth="0.55" origin="0.5,0.5"/>
         <InventoryIcon file="%ModDir%/Images/medical_thermometer.png" />
     </Item>
+</Items>
 </Override>
