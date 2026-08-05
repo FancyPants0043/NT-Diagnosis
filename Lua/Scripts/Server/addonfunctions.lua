@@ -1,7 +1,7 @@
 -- This file will store your frequently used custom helper functions.
 
-Addon = {}
+NTDiagnosis = {}
 
-Addon.ExampleFunction = function ()
+NTDiagnosis.ExampleFunction = function ()
         print("Hello!")
 end
